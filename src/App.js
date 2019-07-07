@@ -1,8 +1,9 @@
 import React from 'react';
+import Form from "./Components/Form/form.js";
 
 function App() {
   return (
- <h1>Hola</h1>
+    <Form />
   );
 }
 
