@@ -1,0 +1,18 @@
+.CField-container{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+.CField-container label{
+    margin-bottom: .5em;
+    font-size: .75em;
+    font-weight: bold;
+    color: rgb(48, 52, 87);
+    opacity: .7;
+}
+.CField-container input{
+    border: 1px solid #bfbfbf;
+    border-radius: 4px;
+    padding: 12px;
+    width: 250px;
+}

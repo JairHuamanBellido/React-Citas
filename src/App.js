@@ -1,6 +1,5 @@
-import React, { Fragment } from "react";
-import Form from "./Components/Form/form.js";
-import Citalista from "./Components/ListCitas/ListCitas.js";
+import React from "react";
+import Layout from "./Components/Layout/layout";
 class App extends React.Component {
     state = {
         citas: []
@@ -14,12 +13,7 @@ class App extends React.Component {
     };
 
     render() {
-        return (
-            <Fragment>
-                <Form newCita={this.newCita} />
-                <Citalista citas={this.state.citas}/>
-            </Fragment>
-        );
+        return <Layout />;
     }
 }
 

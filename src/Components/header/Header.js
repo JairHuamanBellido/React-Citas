@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './header.css'
 
 export default class Header extends React.Component{
     constructor(props)
@@ -14,7 +14,9 @@ export default class Header extends React.Component{
 
 
         return(
-            <header>{this.state.TituloHeader}</header>
+            <header className="HC-header">
+            <h1>{this.state.TituloHeader}</h1>
+            </header>
 
         )
     }

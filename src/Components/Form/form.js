@@ -1,6 +1,6 @@
 import React from "react";
 import Field from "../field/Field.js";
-
+import "./form.css";
 /**
     @IMPORTANTE !!!
     
@@ -37,7 +37,10 @@ export default class Form extends React.Component {
         Cita: {
             Nombre: "",
             Apellido: "",
-            Correo: ""
+            Correo: "",
+            Fecha:"",
+            DNI: "",
+            Telefono:""
         },
         completed: false
     };
@@ -73,35 +76,70 @@ export default class Form extends React.Component {
             Cita: {
                 Nombre: "",
                 Apellido: "",
-                Correo: ""
+                Correo: "",
+                Fecha: "",
+                DNI: "",
+                Telefono: ""
             }
         });
     };
 
     render() {
         return (
-            <form onSubmit={this.handleSubmit}>
-                <Field
-                    labelName="Nombre"
-                    newCita={this.newCita}
-                    isPassword={false}
-                    reset={this.state.completed}
-                    eventResetForm={this.resetForm}
-                />
-                <Field
-                    labelName="Apellido"
-                    newCita={this.newCita}
-                    reset={this.state.completed}
-                    eventResetForm={this.resetForm}
-                />
-                <Field
-                    labelName="Correo"
-                    newCita={this.newCita}
-                    reset={this.state.completed}
-                    eventResetForm={this.resetForm}
-                />
-                <button type="submit">Enviar</button>
-            </form>
+            <div className="FC-Main">
+                <div className="formContainer">
+                    <header>
+                        <h1>CIT ONLINE</h1>
+                        <p>El mejor sitio de citas</p>
+                    </header>
+                    <form onSubmit={this.handleSubmit}>
+                        <div className="field">
+                            <Field
+                                labelName="Nombre"
+                                newCita={this.newCita}
+                                isPassword={false}
+                                reset={this.state.completed}
+                                eventResetForm={this.resetForm}
+                            />
+                            <Field
+                                labelName="Apellido"
+                                newCita={this.newCita}
+                                reset={this.state.completed}
+                                eventResetForm={this.resetForm}
+                            />
+                        </div>
+                        <div className="field">
+                            <Field
+                                labelName="Correo"
+                                newCita={this.newCita}
+                                reset={this.state.completed}
+                                eventResetForm={this.resetForm}
+                            />
+                            <Field
+                                labelName="Fecha"
+                                newCita={this.newCita}
+                                reset={this.state.completed}
+                                eventResetForm={this.resetForm}
+                            />
+                        </div>
+                        <div className="field">
+                            <Field
+                                labelName="DNI"
+                                newCita={this.newCita}
+                                reset={this.state.completed}
+                                eventResetForm={this.resetForm}
+                            />
+                            <Field
+                                labelName="Telefono"
+                                newCita={this.newCita}
+                                reset={this.state.completed}
+                                eventResetForm={this.resetForm}
+                            />
+                        </div>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
         );
     }
 }

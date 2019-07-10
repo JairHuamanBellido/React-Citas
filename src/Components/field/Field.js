@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./field.css";
 /**
 
     ============================================================
@@ -28,7 +28,6 @@ export default class Field extends React.Component {
         value: ""
     };
 
-
     // Evento a la escucha de un cambio en el componente
     componentDidUpdate() {
         const isFormSubmitted = this.props.reset;
@@ -47,7 +46,7 @@ export default class Field extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="CField-container">
                 <label>{this.props.labelName}</label>
                 <input
                     type={this.props.isPassword ? "password" : "text"}

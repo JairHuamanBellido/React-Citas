@@ -1,0 +1,12 @@
+.HC-header{
+    width: 100%;
+    height: 128px;
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.HC-header h1{
+    color: white;
+}
