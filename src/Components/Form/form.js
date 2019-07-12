@@ -136,7 +136,10 @@ export default class Form extends React.Component {
                                 eventResetForm={this.resetForm}
                             />
                         </div>
-                        <button type="submit">Enviar</button>
+                        <div className="btn-form">
+                        <button type="submit">AGREGAR CITA</button>
+
+                        </div>
                     </form>
                 </div>
             </div>

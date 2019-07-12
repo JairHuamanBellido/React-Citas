@@ -37,3 +37,26 @@ form {
 .formContainer header p {
     color: #343434;
 }
+
+
+.formContainer form .btn-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formContainer form .btn-form button{
+    width: 250px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #4f9df5;
+    padding: 1em 0;
+    border-radius: 6px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}   
